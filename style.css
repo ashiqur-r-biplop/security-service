@@ -34,8 +34,8 @@
   background-color: #6c0345;
   z-index: 1000;
 }
-.navbar-brand img {
-  width: 50px;
+.navbar-brand img{
+    width: 50PX;
 }
 .nav-link,
 .navbar-brand {
@@ -344,10 +344,10 @@
   padding: 5px 25px;
   border: 1px solid #fff8dc;
 }
-.fourth-section-card-content-box button:hover {
-  background-color: white;
-  color: #6c0345;
-  transition: all 0.5s ease-in-out;
+.fourth-section-card-content-box button:hover{
+    background-color: white;
+    color: #6c0345;
+    transition: all .5s ease-in-out;
 }
 .fourth-section-card:hover .fourth-section-card-content-box {
   opacity: 100%;
@@ -358,7 +358,6 @@
 
 
 .marquee-body {
-  font-family: "Montserrat", sans-serif;
   height: auto;
   display: flex;
   justify-content: center;
@@ -369,16 +368,16 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
+
 }
 
 :root {
   --marquee-width: 100vw;
   --marquee-height: auto;
-  --marquee-elements-displayed: 5;
-  --marquee-element-width: calc(
-    var(--marquee-width) / var(--marquee-elements-displayed)
-  );
-  --marquee-animation-duration: calc(var(--marquee-elements) * 6s);
+  --marquee-elements-displayed: 4;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 2s);
 }
 
 .marquee {
@@ -417,12 +416,12 @@
   animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
 
+
 .marquee-content li {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: #282828;
   color: #eee;
   flex-shrink: 0;
   width: var(--marquee-element-width);
@@ -438,14 +437,14 @@
 }
 
 .marquee-company-logo {
-  width: 80px;
-  height: 60px;
+    width: 100%;
+    height: 100%;
 }
 
 .marquee-company-logo img {
   width: 100%;
   height: 100%;
-  border-radius: 100%;
+  object-fit: contain;
 }
 
 .marquee-testimonial-social-icons {
@@ -485,14 +484,7 @@
   }
 }
 
-/* Additional CSS for the second marquee (left to right) */
-.marquee-reverse:before {
-  left: 0;
-}
 
-.marquee-reverse:after {
-  right: 0;
-}
 
 .marquee-reverse .marquee-content {
   animation: scrolling-reverse var(--marquee-animation-duration) linear infinite;
@@ -504,16 +496,8 @@
   }
 
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+
   }
 }
 
-@keyframes scrolling-reverse {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
