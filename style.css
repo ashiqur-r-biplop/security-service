@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common css start */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* common css end */
+
+/* navbar styling */
+nav {
+    font-family: "Gruppo", sans-serif;
+}
+
+.nav-link,
+.navbar-brand {
+    color: #FFF8DC !important;
+}
+
+.nav-item .active {}
+
+.navbar {
+    width: 100%;
+    background-color: #6C0345;
+    box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
+    -webkit-box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
+    -moz-box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
+}
+
+/* navbar styling */
+/* header Styling */
+.header {
+    background-image: url("./image/header-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+
+.header-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #6c03465e
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    color: #FFF8DC;
+}
+
+.header-content h1 {
+    font-size: 82px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.header-content p {
+    font-size: 24px;
+    font-family: "Gruppo", sans-serif;
+}
+
+/* header Styling */
+/* back face  second section */
+
+/* back face  second section */
