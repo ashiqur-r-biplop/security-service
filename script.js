@@ -15,3 +15,14 @@ function scrollFunction() {
   }
 }
 // nav bar fixed
+// back face js
+document.querySelectorAll(".backface-card").forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.querySelector(".card-content").style.transform = "rotateY(180deg)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.querySelector(".card-content").style.transform = "rotateY(0deg)";
+  });
+});
+// back face js
