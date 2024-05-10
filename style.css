@@ -23,11 +23,23 @@
     justify-content: space-between;
 }
 
+.section-title {
+    font-size: 52px;
+    padding: 100px 0px 50px 0px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 7px;
+    font-weight: 700;
+    text-align: center;
+    color: #F7C566;
+}
+
 /* common css end */
 
-/* navbar styling */
-nav {
+.navbar {
     font-family: "Gruppo", sans-serif;
+    width: 100%;
+    background-color: #6C0345;
+    z-index: 1000;
 }
 
 .nav-link,
@@ -35,17 +47,22 @@ nav {
     color: #FFF8DC !important;
 }
 
+.navbar-toggler-icon {
+    color: #FFF8DC;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
 .nav-item .active {}
 
-.navbar {
-    width: 100%;
-    background-color: #6C0345;
+.navbar-shadow {
     box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
     -webkit-box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
     -moz-box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
 }
 
-/* navbar styling */
 /* header Styling */
 .header {
     background-image: url("./image/header-image.jpg");
@@ -54,7 +71,7 @@ nav {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 80px);
 }
 
 .header-contain {
@@ -77,14 +94,95 @@ nav {
 .header-content h1 {
     font-size: 82px;
     font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
 }
 
 .header-content p {
     font-size: 24px;
     font-family: "Gruppo", sans-serif;
+    font-weight: 600;
+
 }
 
 /* header Styling */
 /* back face  second section */
+.second-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.second-section-card {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.second-section-card:hover .second-section-card-container {
+    position: absolute;
+    bottom: 0;
+    animation: second-section-card 1s 1;
+}
+
+.second-section-card-img-box {
+    width: 100%;
+    height: 100%;
+}
+
+.second-section-card-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second-section-card-container {
+    background-color: rgba(0, 0, 0, 0.678);
+    color: #FFF8DC;
+    padding: 50px;
+    height: 100%;
+    font-family: "Gruppo", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -500px;
+    animation: second-section-card-out 1s forwards;
+}
+
+.second-section-card-container h3 {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.second-section-card-container p {
+    font-size: 24px;
+}
+
+@keyframes second-section-card {
+    0% {
+        top: 500px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes second-section-card-out {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 500px;
+    }
+}
 
 /* back face  second section */
