@@ -7,10 +7,12 @@
 }
 
 /* common css start */
+section {
+  padding: 100px 0px;
+}
 
 .section-title {
   font-size: 52px;
-  padding: 100px 0px 50px 0px;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 7px;
   font-weight: 700;
@@ -26,6 +28,28 @@
   margin: 0px auto;
 }
 
+.section-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section-box-container h1 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.section-box-container p {
+  margin: 0px;
+  font-family: "Gruppo", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 /* common css end */
 
 /* navbar */
@@ -35,9 +59,11 @@
   background-color: #6c0345;
   z-index: 1000;
 }
+
 .navbar-brand img {
   width: 50px;
 }
+
 .nav-link,
 .navbar-brand {
   color: #fff8dc !important;
@@ -51,15 +77,264 @@
   margin-left: auto;
 }
 
-.nav-item .active {
-}
+.nav-item .active {}
 
 .navbar-shadow {
   box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
   -webkit-box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
   -moz-box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
 }
+
 /* navbar */
+
+
+/* service hero section style */
+.service-hero {
+  background-image: url("./image/service/service-header.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-attachment: fixed;
+  top: 0;
+  height: calc(100vh - 80px);
+}
+
+.container {
+  height: 100%;
+}
+
+.service-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.hero-title {
+  font-size: 82px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 4px;
+}
+
+.service-hero-container p {
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  width: 70%;
+  text-align: center;
+}
+
+.service-hero-btn {
+  border: 1px solid #fff;
+  padding: 8px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.service-hero-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.service-hero-btn a:hover {
+  color: #f7c566;
+  transition: color .3s ease-in-out;
+}
+
+.service-hero-btn span {
+  color: #f7c566;
+}
+
+/* service hero section style */
+/* second section service page */
+.section-title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.section-title-box p {
+  font-size: 30px;
+  font-family: "Gruppo", sans-serif;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.section-title-box button {
+  background: transparent;
+  border: 1px solid #f7c566;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+  color: #f7c566;
+  border-radius: 0px;
+  transition: all .3s ease-in-out;
+
+}
+
+.section-title-box button:hover {
+  background-color: #f7c566;
+  color: #fff8dc;
+  border-radius: 10px;
+  transition: all .3s ease-in-out;
+}
+
+/* second section service page */
+/* third section service page */
+.third-section-service-page {
+  background-image: url("./image/service/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f7c566;
+}
+
+.third-section-service-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-top: 100px;
+}
+
+.third-section-service-page-card-image-box {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
+.third-section-service-page-card-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(10) invert(1) hue-rotate(90deg);
+}
+
+.third-section-service-page-card {
+  border: 1px solid #3b3535;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #3b3535;
+  box-shadow: 0px -20px 41px -5px rgba(255, 239, 173, 0.56) inset;
+  -webkit-box-shadow: 0px -20px 41px -5px rgba(255, 239, 173, 0.56) inset;
+  -moz-box-shadow: 0px -20px 41px -5px rgba(255, 239, 173, 0.56) inset;
+  text-align: center;
+  transition: all .4s ease-in-out;
+}
+
+.third-section-service-page-card:hover {
+  transform: scale(1.1);
+  transition: transform .4s ease-in-out;
+}
+
+.third-section-service-page-card p {
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+}
+
+.third-section-service-page-card button {
+  background-color: transparent;
+  color: #3b3535;
+  border: 1px solid #3b3535;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.third-section-service-page-card button:hover {
+  background-color: #fff8dc;
+  border: 1px solid #fff8dc00;
+  box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
+  -webkit-box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
+  -moz-box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
+  transition: all .3s ease-in-out;
+}
+
+/* third section service page */
+/* four section service page */
+.four-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+}
+
+.four-section-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+}
+
+.four-section-content-box h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.four-section-content-box p {
+  font-family: "Gruppo", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.four-section-image-box {
+  width: 350px;
+}
+
+.four-section-image-box img {
+  width: 100%;
+}
+
+.four-section .four-section-image-box img {
+  transition: all .3s ease-in-out;
+}
+
+.four-section:hover .four-section-image-box img {
+  transform: scale(120%);
+  transition: transform .3s ease-in-out;
+}
+
+/* four section service page */
+/* font-family: "Bebas Neue", sans-serif;
+font-family: "Gruppo", sans-serif; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 footer {
@@ -68,6 +343,7 @@ footer {
   width: 100%;
   height: 400px;
 }
+
 footer::after {
   content: "";
   position: absolute;
@@ -80,6 +356,7 @@ footer::after {
   transform: rotate(180deg);
   opacity: 50%;
 }
+
 footer::before {
   content: "";
   position: absolute;
@@ -92,15 +369,18 @@ footer::before {
   transform: rotate(360deg);
   opacity: 50%;
 }
+
 .container {
   height: 100%;
 }
+
 .footer {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -108,35 +388,44 @@ footer::before {
   font-family: "Gruppo", sans-serif;
   font-weight: 600;
 }
+
 .footer-container h2 {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: 2px;
   font-family: "Bebas Neue", sans-serif !important;
 }
+
 .footer-logo {
   width: 100px;
 }
+
 .footer-logo img {
   width: 100%;
 }
+
 .footer-icons {
   display: flex;
   gap: 20px;
 }
+
 .footer-icons i {
   font-size: 25px;
 }
+
 .footer-content {
   display: flex;
   flex-direction: column;
 }
+
 .footer-content a {
   text-decoration: none;
   color: black;
 }
+
 /* footer */
 @media screen and(min-width:0px) and(max-width: 480) {
+
   /* footer */
   footer {
     position: relative;
@@ -146,6 +435,7 @@ footer::before {
     padding: 40px 20px;
     margin-top: 40px;
   }
+
   footer::after {
     content: "";
     position: absolute;
@@ -158,6 +448,7 @@ footer::before {
     transform: rotate(180deg);
     opacity: 0%;
   }
+
   footer::before {
     content: "";
     position: absolute;
@@ -170,15 +461,18 @@ footer::before {
     transform: rotate(360deg);
     opacity: 0%;
   }
+
   .container {
     height: 100%;
   }
+
   .footer {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .footer-container {
     display: flex;
     flex-direction: column-reverse;
@@ -187,32 +481,40 @@ footer::before {
     font-family: "Gruppo", sans-serif;
     font-weight: 600;
   }
+
   .footer-container h2 {
     font-size: 28px;
     font-weight: 600;
     letter-spacing: 2px;
     font-family: "Bebas Neue", sans-serif !important;
   }
+
   .footer-logo {
     width: 100px;
   }
+
   .footer-logo img {
     width: 100%;
   }
+
   .footer-icons {
     display: flex;
     gap: 20px;
   }
+
   .footer-icons i {
     font-size: 25px;
   }
+
   .footer-content {
     display: flex;
     flex-direction: column;
   }
+
   .footer-content a {
     text-decoration: none;
     color: black;
   }
+
   /* footer */
 }
