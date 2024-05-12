@@ -9,7 +9,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- custom css -->
   <link rel="stylesheet" href="./service.css" />
+  <style>
+    swiper-container {
+      width: 100%;
+      height: 300px;
+      margin: 20px auto;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .append-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .append-buttons a {
+      display: inline-block;
+      border: 1px solid #007aff;
+      color: #007aff;
+      text-decoration: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin: 0 10px;
+      font-size: 13px;
+    }
+  </style>
 </head>
 
 <body>
@@ -157,7 +191,23 @@
     </div>
   </section>
   <!-- four section service page -->
-  <section></section>
+  <section>
+    <div class="container">
+      <swiper-container init="false"></swiper-container>
+
+      <p class="append-buttons">
+        <a href="#" class="prepend-2-slides">Prepend 2 Slides</a>
+        <a href="#" class="slide-1">Slide 1</a>
+        <a href="#" class="slide-250">Slide 250</a>
+        <a href="#" class="slide-500">Slide 500</a>
+        <a href="#" class="append-slide">Append Slide</a>
+      </p>
+    </div>
+  </section>
+  <!-- testimonial -->
+
+  <!-- testimonial -->
+
   <!-- footer -->
   <footer>
     <div class="container">
@@ -206,6 +256,66 @@
   <!-- js -->
   <script src="https://kit.fontawesome.com/253828a4b7.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <script>
+    let appendNumber = 600;
+    let prependNumber = 1;
+    const swiperEl = document.querySelector('swiper-container')
+    Object.assign(swiperEl, {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        type: 'fraction',
+      },
+      navigation: true,
+      virtual: {
+        slides: (function () {
+          const slides = [];
+          for (var i = 0; i < 6; i += 1) {
+            slides.push('Slide ' + (i + 1));
+          }
+          return slides;
+        })(),
+      },
+    });
+    swiperEl.initialize();
+    const swiper = swiperEl.swiper;
+    document
+      .querySelector('.slide-1')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(0, 0);
+      });
+    document
+      .querySelector('.slide-250')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(249, 0);
+      });
+    document
+      .querySelector('.slide-500')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(499, 0);
+      });
+    document
+      .querySelector('.prepend-2-slides')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.virtual.prependSlide([
+          'Slide ' + --prependNumber,
+          'Slide ' + --prependNumber,
+        ]);
+      });
+    document
+      .querySelector('.append-slide')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.virtual.appendSlide('Slide ' + ++appendNumber);
+      });
+  </script>
 </body>
 
 </html>
