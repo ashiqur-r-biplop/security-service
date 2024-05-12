@@ -10,14 +10,14 @@
 section {
   padding: 100px 0px;
 }
-
 .section-title {
   font-size: 52px;
+  padding: 0px 0px 0px 0px;
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 7px;
-  font-weight: 700;
+  letter-spacing: 1px;
+  font-weight: 900;
   text-align: center;
-  color: #f7c566;
+  color: #008dda;
 }
 
 .section-discription {
@@ -27,7 +27,6 @@ section {
   width: 90%;
   margin: 0px auto;
 }
-
 .section-box-container {
   display: flex;
   flex-direction: column;
@@ -52,41 +51,40 @@ section {
 
 /* common css end */
 
-/* navbar */
+/* common css end */
+.navbar-container {
+  position: sticky !important;
+  top: 0px;
+  z-index: 99999 !important;
+}
 .navbar {
   font-family: "Gruppo", sans-serif;
-  width: 100%;
-  background-color: #6c0345;
-  z-index: 1000;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.884) !important;
+  font-weight: 600;
+  padding: 10px 0px !important;
 }
-
 .navbar-brand img {
   width: 50px;
-}
-
-.nav-link,
-.navbar-brand {
-  color: #fff8dc !important;
-}
-
-.navbar-toggler-icon {
-  color: #fff8dc;
 }
 
 .navbar-nav {
   margin-left: auto;
 }
-
-.nav-item .active {}
+.navbar-brand {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 32px;
+}
+.nav-item .active {
+}
 
 .navbar-shadow {
-  box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
-  -webkit-box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
-  -moz-box-shadow: 1px 19px 24px -12px rgba(108, 3, 69, 0.75);
+  box-shadow: 0px 12px 40px 0px rgba(172, 226, 225, 0.75);
+  -webkit-box-shadow: 0px 12px 40px 0px rgba(172, 226, 225, 0.75);
+  -moz-box-shadow: 0px 12px 40px 0px rgba(172, 226, 225, 0.75);
 }
 
 /* navbar */
-
 
 /* service hero section style */
 .service-hero {
@@ -98,8 +96,18 @@ section {
   background-attachment: fixed;
   top: 0;
   height: calc(100vh - 80px);
+  position: relative;
+  width: 100%;
 }
-
+.service-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0707078e;
+}
 .container {
   height: 100%;
 }
@@ -116,6 +124,8 @@ section {
   font-size: 82px;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 4px;
+  z-index: 999999 !important;
+
 }
 
 .service-hero-container p {
@@ -123,6 +133,8 @@ section {
   font-weight: 600;
   font-size: 24px;
   width: 70%;
+  z-index: 999999 !important;
+
   text-align: center;
 }
 
@@ -132,6 +144,9 @@ section {
   display: flex;
   align-items: center;
   gap: 20px;
+  z-index: 999999 !important;
+  font-weight: 600;
+
 }
 
 .service-hero-btn a {
@@ -140,12 +155,12 @@ section {
 }
 
 .service-hero-btn a:hover {
-  color: #f7c566;
-  transition: color .3s ease-in-out;
+  color: #008dda;
+  transition: color 0.3s ease-in-out;
 }
 
 .service-hero-btn span {
-  color: #f7c566;
+  color: #008dda;
 }
 
 /* service hero section style */
@@ -167,7 +182,7 @@ section {
 
 .section-title-box button {
   background: transparent;
-  border: 1px solid #f7c566;
+  border: 1px solid #000;
   padding: 10px 30px;
   display: flex;
   align-items: center;
@@ -175,17 +190,16 @@ section {
   font-size: 22px;
   font-family: "Gruppo", sans-serif;
   font-weight: 600;
-  color: #f7c566;
+  color: #000;
   border-radius: 0px;
-  transition: all .3s ease-in-out;
-
+  transition: all 0.3s ease-in-out;
 }
 
 .section-title-box button:hover {
-  background-color: #f7c566;
-  color: #fff8dc;
+  background-color: #000;
+  color: #fff;
   border-radius: 10px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* second section service page */
@@ -195,7 +209,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #f7c566;
+  background-color: lightgray;
 }
 
 .third-section-service-page-grid {
@@ -229,16 +243,16 @@ section {
   cursor: pointer;
   border-radius: 4px;
   color: #3b3535;
-  box-shadow: 0px -20px 41px -5px rgba(255, 239, 173, 0.56) inset;
-  -webkit-box-shadow: 0px -20px 41px -5px rgba(255, 239, 173, 0.56) inset;
-  -moz-box-shadow: 0px -20px 41px -5px rgba(255, 239, 173, 0.56) inset;
+  box-shadow: 0px -20px 41px -5px rgba(68, 63, 43, 0.56) inset;
+  -webkit-box-shadow: 0px -20px 41px -5px rgba(68, 63, 43, 0.56) inset;
+  -moz-box-shadow: 0px -20px 41px -5px rgba(68, 63, 43, 0.56) inset;
   text-align: center;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .third-section-service-page-card:hover {
   transform: scale(1.1);
-  transition: transform .4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .third-section-service-page-card p {
@@ -253,7 +267,7 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .third-section-service-page-card button:hover {
@@ -262,7 +276,7 @@ section {
   box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
   -webkit-box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
   -moz-box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* third section service page */
@@ -271,7 +285,6 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: start;
-
 }
 
 .four-section-content-box {
@@ -279,7 +292,6 @@ section {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-
 }
 
 .four-section-content-box h2 {
@@ -304,44 +316,29 @@ section {
 }
 
 .four-section .four-section-image-box img {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .four-section:hover .four-section-image-box img {
   transform: scale(120%);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 /* four section service page */
 /* font-family: "Bebas Neue", sans-serif;
 font-family: "Gruppo", sans-serif; */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* service testimonial  */
+.service-testimonial{
+  padding-top: 0px !important;
+}
+/* service testimonial  */
 /* footer */
 footer {
   position: relative;
-  background-color: #fff8dc;
+  background-color: #000;
   width: 100%;
   height: 400px;
+  color: #fff;
 }
 
 footer::after {
@@ -420,12 +417,11 @@ footer::before {
 
 .footer-content a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 /* footer */
 @media screen and(min-width:0px) and(max-width: 480) {
-
   /* footer */
   footer {
     position: relative;
