@@ -185,10 +185,9 @@
 }
 
 .second-section-card-container button {
-  background: rgb(0,141,218);
-  background: linear-gradient(8deg, rgba(0,141,218,1) 0%, rgba(247,238,221,1) 56%, rgba(172,226,225,1) 100%);
+  background-color: blue;
   border: none;
-  color: #008DDA;
+  color: #fff;
   padding: 10px 30px;
   font-family: "Gruppo", sans-serif;
   border: 1px solid rgba(0, 142, 218, 0);
