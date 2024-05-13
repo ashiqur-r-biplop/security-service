@@ -10,6 +10,7 @@
 section {
   padding: 100px 0px;
 }
+
 .section-title {
   font-size: 52px;
   padding: 0px 0px 0px 0px;
@@ -27,6 +28,7 @@ section {
   width: 90%;
   margin: 0px auto;
 }
+
 .section-box-container {
   display: flex;
   flex-direction: column;
@@ -57,6 +59,7 @@ section {
   top: 0px;
   z-index: 99999 !important;
 }
+
 .navbar {
   font-family: "Gruppo", sans-serif;
   background-color: #fff;
@@ -64,6 +67,7 @@ section {
   font-weight: 600;
   padding: 10px 0px !important;
 }
+
 .navbar-brand img {
   width: 50px;
 }
@@ -71,12 +75,13 @@ section {
 .navbar-nav {
   margin-left: auto;
 }
+
 .navbar-brand {
   font-family: "Bebas Neue", sans-serif;
   font-size: 32px;
 }
-.nav-item .active {
-}
+
+.nav-item .active {}
 
 .navbar-shadow {
   box-shadow: 0px 12px 40px 0px rgba(172, 226, 225, 0.75);
@@ -99,6 +104,7 @@ section {
   position: relative;
   width: 100%;
 }
+
 .service-hero::before {
   content: "";
   position: absolute;
@@ -108,6 +114,7 @@ section {
   height: 100%;
   background-color: #0707078e;
 }
+
 .container {
   height: 100%;
 }
@@ -270,8 +277,8 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.third-section-service-page-card button:hover {
-  background-color: #fff8dc;
+.third-section-service-page-card:hover button {
+  background-color: #fff;
   border: 1px solid #fff8dc00;
   box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
   -webkit-box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
@@ -328,9 +335,132 @@ section {
 /* font-family: "Bebas Neue", sans-serif;
 font-family: "Gruppo", sans-serif; */
 /* service testimonial  */
-.service-testimonial{
+.service-testimonial {
   padding-top: 0px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: lightgray;
+  padding-top: 100px !important;
 }
+
+.service-testimonial p {
+  font-family: "Gruppo", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px !important;
+}
+
+/* swiper js */
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  background-color: lightgray;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 70px;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.rettings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px !important;
+  font-family: "Gruppo", sans-serif !important;
+
+}
+
+.retting-star {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: -15px;
+  color: rgb(126, 126, 0);
+
+}
+
+.testimonial-description h4 {
+  font-size: 18px !important;
+}
+
+.testimonial-description p {
+  font-size: 16px;
+}
+
+.testimonial-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.client {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.client h4,
+.client p {
+  margin: 0 !important;
+  font-family: "Gruppo", sans-serif;
+  font-weight: 600;
+  text-align: start;
+}
+
+.client p {
+  font-size: 18px;
+
+}
+
+.client-image,
+.qoute {
+  width: 70px;
+  height: 70px;
+}
+
+.client-image img,
+.qoute img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* swiper js */
 /* service testimonial  */
 /* footer */
 footer {
@@ -422,6 +552,7 @@ footer::before {
 
 /* footer */
 @media screen and(min-width:0px) and(max-width: 480) {
+
   /* footer */
   footer {
     position: relative;
