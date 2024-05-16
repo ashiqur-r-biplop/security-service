@@ -50,7 +50,23 @@ section {
   font-size: 24px;
   font-weight: 600;
 }
-
+.third-section-box-container {
+  text-align: center;
+}
+.third-section-box-container h1{
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 52px;
+  font-weight: 700;
+  color: #fff;
+}
+.third-section-box-container h3{
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
 /* common css end */
 
 /* common css end */
@@ -336,7 +352,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: lightgray;
+  background-color: #000;
 }
 
 .third-section-service-page-grid {
@@ -347,16 +363,16 @@ section {
 }
 
 .third-section-service-page-card-image-box {
-  width: 70px;
-  height: 70px;
-  margin: auto;
+  width: 100%;
+  height: 100px;
+  margin: 0px !important;
 }
 
 .third-section-service-page-card-image-box img {
   width: 100%;
-  height: 100%;
+  height: 70px;
   object-fit: contain;
-  filter: brightness(10) invert(1) hue-rotate(90deg);
+  filter: brightness(0) invert(1) hue-rotate(90deg);
 }
 
 .third-section-service-page-card {
@@ -364,26 +380,35 @@ section {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
   cursor: pointer;
   border-radius: 4px;
-  color: #3b3535;
-  box-shadow: 0px -20px 41px -5px rgba(68, 63, 43, 0.56) inset;
-  -webkit-box-shadow: 0px -20px 41px -5px rgba(68, 63, 43, 0.56) inset;
-  -moz-box-shadow: 0px -20px 41px -5px rgba(68, 63, 43, 0.56) inset;
+  color: #fff;
+  box-shadow: 0px -20px 41px -5px rgba(4, 0, 255, 0.56) inset;
+  -webkit-box-shadow: 0px -20px 41px -5px rgba(4, 0, 255, 0.56)  inset;
+  -moz-box-shadow: 0px -20px 41px -5px rgba(4, 0, 255, 0.56)  inset;
   text-align: center;
   transition: all 0.4s ease-in-out;
+  height: 600px;
 }
-
+.third-section-service-page-card-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
 .third-section-service-page-card:hover {
   transform: scale(1.1);
-  transition: transform 0.4s ease-in-out;
+  box-shadow: 0px -20px 41px -5px rgba(144, 143, 233, 0.56) inset;
+  -webkit-box-shadow: 0px -20px 41px -5px rgba(144, 143, 233, 0.56)  inset;
+  -moz-box-shadow: 0px -20px 41px -5px rgba(144, 143, 233, 0.56)  inset;
+  transition: all 0.4s ease-in-out;
 }
 
 .third-section-service-page-card p {
   font-family: "Gruppo", sans-serif;
+  font-size: 19px;
   font-weight: 600;
 }
 
@@ -400,190 +425,21 @@ section {
 .third-section-service-page-card:hover button {
   background-color: #fff;
   border: 1px solid #fff8dc00;
-  box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
-  -webkit-box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
-  -moz-box-shadow: 0px -20px 41px -5px rgba(255, 248, 220, 0.46);
+  box-shadow: 0px -20px 41px -5px rgba(4, 0, 255, 0.795) ;
+  -webkit-box-shadow: 0px -20px 41px -5px rgba(4, 0, 255, 0.56) ;
+  -moz-box-shadow: 0px -20px 41px -5px rgba(4, 0, 255, 0.56) ;
   transition: all 0.3s ease-in-out;
 }
 
 /* third section service page */
-/* four section service page */
-.four-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
 
-.four-section-content-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-}
-
-.four-section-content-box h2 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 52px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.four-section-content-box p {
-  font-family: "Gruppo", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.four-section-image-box {
-  width: 350px;
-}
-
-.four-section-image-box img {
-  width: 100%;
-}
-
-.four-section .four-section-image-box img {
-  transition: all 0.3s ease-in-out;
-}
-
-.four-section:hover .four-section-image-box img {
-  transform: scale(120%);
-  transition: transform 0.3s ease-in-out;
-}
-
-/* four section service page */
-/* font-family: "Bebas Neue", sans-serif;
-font-family: "Gruppo", sans-serif; */
-/* service testimonial  */
-.service-testimonial {
-  padding-top: 0px !important;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  background-color: lightgray;
-  padding-top: 100px !important;
-}
-
-.service-testimonial p {
-  font-family: "Gruppo", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-  margin: 0px !important;
-}
-
-/* swiper js */
-
-swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: flex;
-  background-color: lightgray;
-  justify-content: center;
-  align-items: center;
-}
-
-swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.testimonial-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  padding: 0px 70px;
-}
-
-.testimonial-card {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 30px;
-}
-
-.rettings {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px !important;
-  font-family: "Gruppo", sans-serif !important;
-}
-
-.retting-star {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: -15px;
-  color: rgb(126, 126, 0);
-}
-
-.testimonial-description h4 {
-  font-size: 18px !important;
-}
-
-.testimonial-description p {
-  font-size: 16px;
-}
-
-.testimonial-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-.client {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 20px;
-}
-
-.client h4,
-.client p {
-  margin: 0 !important;
-  font-family: "Gruppo", sans-serif;
-  font-weight: 600;
-  text-align: start;
-}
-
-.client p {
-  font-size: 18px;
-}
-
-.client-image,
-.qoute {
-  width: 70px;
-  height: 70px;
-}
-
-.client-image img,
-.qoute img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* swiper js */
 /* service testimonial  */
 
 
 /* footer */
 footer {
   position: relative;
-  background-color: #000;
+  background-color: #000000ee;
   width: 100%;
   height: 400px;
 }
