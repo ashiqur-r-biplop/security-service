@@ -686,7 +686,7 @@ footer::before {
     height: 100%;
   }
   .header-content {
-    padding: 20px 10px;
+    padding: 50px 15px;
   }
   .header-content h1 {
     font-size: 26px;
@@ -737,7 +737,6 @@ footer::before {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    text-align: justify;
   }
   .second-section-card-container {
     justify-content: start;
@@ -746,7 +745,7 @@ footer::before {
 
   .second-section-card-container h3 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .second-section-card-container p {
