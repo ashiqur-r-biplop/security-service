@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./image/logo.webp" />
+    <title>Trocter | Service</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./service.css" />
+    <style>
+      swiper-container {
+        width: 100%;
+        height: 300px;
+        margin: 20px auto;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="./image/logo.webp">
-  <title>Trocter | Service</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- custom css -->
-  <link rel="stylesheet" href="./service.css" />
-  <style>
-    swiper-container {
-      width: 100%;
-      height: 300px;
-      margin: 20px auto;
-    }
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+      .append-buttons {
+        text-align: center;
+        margin-top: 20px;
+      }
 
-    .append-buttons {
-      text-align: center;
-      margin-top: 20px;
-    }
+      .append-buttons a {
+        display: inline-block;
+        border: 1px solid #007aff;
+        color: #007aff;
+        text-decoration: none;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin: 0 10px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
 
-    .append-buttons a {
-      display: inline-block;
-      border: 1px solid #007aff;
-      color: #007aff;
-      text-decoration: none;
-      padding: 4px 10px;
-      border-radius: 4px;
-      margin: 0 10px;
-      font-size: 13px;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- navbar start -->
-  <!-- <div class="navbar-container">
+  <body>
+    <!-- navbar start -->
+    <!-- <div class="navbar-container">
   <nav id="navbar" class="navbar navbar-expand-lg py-4">
     <div class="container">
       <a class="navbar-brand" href="./index.html"
@@ -88,282 +97,247 @@
     </div>
   </nav>
 </div> -->
-  <!-- navbar End -->
-  <!-- service hero section -->
-  <div class="marquee-button">
-    <div class="marquee-track-button">
-      <div class="marquee-track-button-content">
-        <p>Safeguard Your Digital Assets: Intelligent Attack Surface Mitigation Services
-        </p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Reduce Your Cyber Risk: Comprehensive Attack Surface Management</p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Fortify Your Digital Perimeter: Advanced Attack Surface Mitigation Strategies
-        </p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Safeguard Your Digital Assets: Intelligent Attack Surface Mitigation Services</p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Reduce Your Cyber Risk: Comprehensive Attack Surface Management</p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Fortify Your Digital Perimeter: Advanced Attack Surface Mitigation Strategies
-        </p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Reduce Your Cyber Risk: Comprehensive Attack Surface Management</p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Safeguard Your Digital Assets: Intelligent Attack Surface Mitigation Services</p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <p>Fortify Your Digital Perimeter: Advanced Attack Surface Mitigation Strategies</p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </div>
-    </div>
-  </div>
-  <header class="service-hero">
-    <div class="container">
-      <div class="service-hero-container">
-        <h1 class="hero-title">
-          Reduce Your Cyber Risk: Comprehensive Attack Surface Management
-        </h1>
-        <p>
-          Our process maps out your digital assets using multiple techniques. This inventory enables you to oversee your
-          external systems and strategically prioritize actions, without false positives or unnecessary noise.
-
-        </p>
-        <button class="service-hero-btn">Contact Us</button>
-      </div>
-    </div>
-  </header>
-  <!-- service hero section -->
-  <!-- service second section -->
-  <section class="container">
-    <div class="service-second-section">
-      <div class="section-title-box">
-        <h1 class="section-title">Discover your Attack
-          Surface Continuously</h1>
-        <p>Our process maps out your digital assets using multiple techniques. This inventory enables you to oversee
-          your external systems and strategically prioritize actions, without false positives or unnecessary noise.
-        </p>
-        <button><span>Request Sample Report</span> <i class="fa-regular fa-circle-down"></i></button>
-      </div>
-    </div>
-  </section>
-  <!-- service second section -->
-  <!-- service third section  -->
-  <section class="third-section-service-page">
-    <div class="container">
-      <!-- section title box -->
-      <div class="section-box-container">
-        <p>Our Services</p>
-        <h1 class="section-title">We Offer Professional Security Solutions</h1>
-      </div>
-      <!-- section title box -->
-      <div class="third-section-service-page-grid">
-        <div class="third-section-service-page-card">
-          <div class="third-section-service-page-card-image-box">
-            <img src="./image/service/icons/icon1.png" alt="">
-          </div>
-          <h3>Network Security</h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat arem nulla pariatur.
+    <!-- navbar End -->
+    <!-- service hero section -->
+    <div class="marquee-button">
+      <div class="marquee-track-button">
+        <div class="marquee-track-button-content">
+          <p>
+            Safeguard Your Digital Assets: Intelligent Attack Surface Mitigation
+            Services
           </p>
-          <button><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="third-section-service-page-card">
-          <div class="third-section-service-page-card-image-box">
-            <img src="./image/service/icons/icon2.png" alt="">
-          </div>
-          <h3>Database Security
-          </h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat arem nulla pariatur.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>Reduce Your Cyber Risk: Comprehensive Attack Surface Management</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>
+            Fortify Your Digital Perimeter: Advanced Attack Surface Mitigation
+            Strategies
           </p>
-          <button><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="third-section-service-page-card">
-          <div class="third-section-service-page-card-image-box">
-            <img src="./image/service/icons/icon3.png" alt="">
-          </div>
-          <h3>Web Security
-          </h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat arem nulla pariatur.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>
+            Safeguard Your Digital Assets: Intelligent Attack Surface Mitigation
+            Services
           </p>
-          <button><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="third-section-service-page-card">
-          <div class="third-section-service-page-card-image-box">
-            <img src="./image/service/icons/icon4.png" alt="">
-          </div>
-          <h3>Locker Security
-          </h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat arem nulla pariatur.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>Reduce Your Cyber Risk: Comprehensive Attack Surface Management</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>
+            Fortify Your Digital Perimeter: Advanced Attack Surface Mitigation
+            Strategies
           </p>
-          <button><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="third-section-service-page-card">
-          <div class="third-section-service-page-card-image-box">
-            <img src="./image/service/icons/icon5.png" alt="">
-          </div>
-          <h3>Data Security
-          </h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat arem nulla pariatur.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>Reduce Your Cyber Risk: Comprehensive Attack Surface Management</p>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>
+            Safeguard Your Digital Assets: Intelligent Attack Surface Mitigation
+            Services
           </p>
-          <button><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        <div class="third-section-service-page-card">
-          <div class="third-section-service-page-card-image-box">
-            <img src="./image/service/icons/icon6.png" alt="">
-          </div>
-          <h3>Cloud Security
-          </h3>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat arem nulla pariatur.
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <p>
+            Fortify Your Digital Perimeter: Advanced Attack Surface Mitigation
+            Strategies
           </p>
-          <button><i class="fa-solid fa-arrow-right"></i></button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
     </div>
-  </section>
-  <!-- service third section  -->
-  <!-- four section service page -->
-  <section>
-    <div class="container">
-      <div class="four-section">
-        <div class="four-section-content-box">
-          <h2 class="section-title">Our customers love us.</h2>
-          <p>We have an industry-leading 4.6 star average on Gartner Peer Insights.</p>
+    <header class="service-hero">
+      <div class="container">
+        <div class="service-hero-container">
+          <h1 class="hero-title">
+            Reduce Your Cyber Risk: Comprehensive Attack Surface Management
+          </h1>
+          <p>
+            Our process maps out your digital assets using multiple techniques.
+            This inventory enables you to oversee your external systems and
+            strategically prioritize actions, without false positives or
+            unnecessary noise.
+          </p>
+          <button class="service-hero-btn">Contact Us</button>
         </div>
-        <div class="four-section-image-box">
-          <img src="./image/service/peer-insight-img.png" alt="">
-        </div>
-
       </div>
-    </div>
-  </section>
-  <!-- four section service page -->
-  <section class="service-testimonial">
-    <div class="section">
-      <div class="section-title">Our Testimonial</div>
-    </div>
-    <div class="container">
-      <swiper-container init="false"></swiper-container>
-
-      <p class="append-buttons">
-        <a href="#" class="prepend-2-slides">Prepend 2 Slides</a>
-        <a href="#" class="slide-1">Slide 1</a>
-        <a href="#" class="slide-250">Slide 250</a>
-        <a href="#" class="slide-500">Slide 500</a>
-        <a href="#" class="append-slide">Append Slide</a>
-      </p>
-    </div>
-  </section>
-  <!-- testimonial -->
-
-  <!-- testimonial -->
-
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="footer">
-        <div class="footer-container">
-          <div class="footer-content">
-            <h2>Contact Us</h2>
-            <div>
-              <p>Email: info@trocter.com</p>
-              <div class="footer-icons">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
-              </div>
+    </header>
+    <!-- service hero section -->
+    <!-- service second section -->
+    <section class="container">
+      <div class="service-second-section">
+        <div class="section-title-box">
+          <h1 class="section-title">
+            Discover your Attack Surface Continuously
+          </h1>
+          <p>
+            Our process maps out your digital assets using multiple techniques.
+            This inventory enables you to oversee your external systems and
+            strategically prioritize actions, without false positives or
+            unnecessary noise.
+          </p>
+          <button>
+            <span>Get Help</span> <i class="fa-solid fa-handshake-angle"></i>
+          </button>
+        </div>
+        <div class="second-section-image-container">
+          <div class="second-section-big-image">
+            <img src="./image/service/ss-2.png" alt="" />
+          </div>
+          <div class="second-section-small-image-1">
+            <img src="./image/service/ss-1.png" alt="" />
+          </div>
+          <div class="second-section-small-image-2">
+            <img src="./image/service/ss3.jpg" alt="" />
+          </div>
+          <div class="second-section-small-image-3">
+            <img src="./image/service/ss-4.jpeg" alt="" />
+          </div>
+          <div class="second-section-small-image-4">
+            <img src="./image/service/ss-5.png" alt="" />
+          </div>
+         
+        </div>
+      </div>
+    </section>
+    <!-- service second section -->
+    <!-- service third section  -->
+    <section class="third-section-service-page">
+      <div class="container">
+        <!-- section title box -->
+        <div class="section-box-container">
+          <p>Our Services</p>
+          <h1 class="section-title">
+            We Offer Professional Security Solutions
+          </h1>
+        </div>
+        <!-- section title box -->
+        <div class="third-section-service-page-grid">
+          <div class="third-section-service-page-card">
+            <div class="third-section-service-page-card-image-box">
+              <img src="./image/service/icons/icon1.png" alt="" />
             </div>
-          </div>
-          <div class="footer-content">
-            <h2>Services</h2>
-            <ui class="footer-items">
-              <li><a href="#"> IT Cost Auditing </a></li>
-              <li><a href="#"> Cybersecurity </a></li>
-              <li><a href="#"> DevOps </a></li>
-            </ui>
-          </div>
-          <div class="footer-content">
-            <h2>Legal</h2>
-            <ui class="footer-items">
-              <li><a href="#"> Terms & Conditions </a></li>
-              <li><a href="#"> Privacy Policy </a></li>
-            </ui>
-          </div>
-          <div class="footer-content">
-            <div class="footer-logo">
-              <img src="./image/logo.webp" alt="" />
-            </div>
+            <h3>Network Security</h3>
             <p>
-              Trocter connects service providers with emerging businesses
-              seeking support across the spectrum of IT, operations,
-              infrastructure, and software development.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore fugiat arem nulla pariatur.
+            </p>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="third-section-service-page-card">
+            <div class="third-section-service-page-card-image-box">
+              <img src="./image/service/icons/icon2.png" alt="" />
+            </div>
+            <h3>Database Security</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore fugiat arem nulla pariatur.
+            </p>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="third-section-service-page-card">
+            <div class="third-section-service-page-card-image-box">
+              <img src="./image/service/icons/icon3.png" alt="" />
+            </div>
+            <h3>Web Security</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore fugiat arem nulla pariatur.
+            </p>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="third-section-service-page-card">
+            <div class="third-section-service-page-card-image-box">
+              <img src="./image/service/icons/icon4.png" alt="" />
+            </div>
+            <h3>Locker Security</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore fugiat arem nulla pariatur.
+            </p>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="third-section-service-page-card">
+            <div class="third-section-service-page-card-image-box">
+              <img src="./image/service/icons/icon5.png" alt="" />
+            </div>
+            <h3>Data Security</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore fugiat arem nulla pariatur.
+            </p>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="third-section-service-page-card">
+            <div class="third-section-service-page-card-image-box">
+              <img src="./image/service/icons/icon6.png" alt="" />
+            </div>
+            <h3>Cloud Security</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore fugiat arem nulla pariatur.
+            </p>
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service third section  -->
+    <!-- four section service page -->
+   <!--  <section>
+      <div class="container">
+        <div class="four-section">
+          <div class="four-section-content-box">
+            <h2 class="section-title">Our customers love us.</h2>
+            <p>
+              We have an industry-leading 4.6 star average on Gartner Peer
+              Insights.
             </p>
           </div>
+          <div class="four-section-image-box">
+            <img src="./image/service/peer-insight-img.png" alt="" />
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- footer -->
-  <!-- js -->
-  <script src="https://kit.fontawesome.com/253828a4b7.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </section> -->
+    <!-- four section service page -->
+   <!--  <section class="service-testimonial">
+      <div class="section">
+        <div class="section-title">Our Testimonial</div>
+      </div>
+      <div class="container">
+        <swiper-container init="false"></swiper-container>
 
-  <script>
-    let appendNumber = 600;
-    let prependNumber = 1;
-    const swiperEl = document.querySelector('swiper-container')
-    Object.assign(swiperEl, {
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 30,
-      pagination: {
-        type: 'fraction',
-      },
-      navigation: true,
-      virtual: {
-        slides: (function () {
-          const slides = [];
-          for (var i = 0; i < 6; i += 1) {
-            slides.push('Slide ' + (i + 1));
-          }
-          return slides;
-        })(),
-      },
-    });
-    swiperEl.initialize();
-    const swiper = swiperEl.swiper;
-    document
-      .querySelector('.slide-1')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.slideTo(0, 0);
-      });
-    document
-      .querySelector('.slide-250')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.slideTo(249, 0);
-      });
-    document
-      .querySelector('.slide-500')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.slideTo(499, 0);
-      });
-    document
-      .querySelector('.prepend-2-slides')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.virtual.prependSlide([
-          'Slide ' + --prependNumber,
-          'Slide ' + --prependNumber,
-        ]);
-      });
-    document
-      .querySelector('.append-slide')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.virtual.appendSlide('Slide ' + ++appendNumber);
-      });
-  </script>
-</body>
+        <p class="append-buttons">
+          <a href="#" class="prepend-2-slides">Prepend 2 Slides</a>
+          <a href="#" class="slide-1">Slide 1</a>
+          <a href="#" class="slide-250">Slide 250</a>
+          <a href="#" class="slide-500">Slide 500</a>
+          <a href="#" class="append-slide">Append Slide</a>
+        </p>
+      </div>
+    </section> -->
+    <!-- testimonial -->
 
+    <!-- testimonial -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <h2>
+            Don’t let your business become another cybersecurity statistic
+          </h2>
+          <p>
+            Contact the Trocter team today and give your digital network the
+            continuous protection it needs.
+          </p>
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <!-- js -->
+    <script
+      src="https://kit.fontawesome.com/253828a4b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+  </body>
 </html>
