@@ -154,7 +154,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.second-section-card-second{
+.second-section-card-second {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -163,7 +163,6 @@
 .second-section-card-img-box {
   width: 50%;
   height: 500px;
-  left: -50000px;
 }
 
 .second-section-card-img-box img {
@@ -647,7 +646,7 @@ footer::before {
   align-items: center;
   color: white;
 }
-.footer button{
+.footer button {
   background-color: blue;
   border: none;
   color: #fff;
@@ -659,9 +658,286 @@ footer::before {
   font-size: 16px;
   transition: all 0.3s ease-in-out;
 }
-.footer button:hover{
+.footer button:hover {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
 }
 /* footer */
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+  /* common css */
+  .section-title {
+    font-size: 32px;
+    margin: 0px;
+    padding: 20px 10px;
+  }
+  .section-discription {
+    font-size: 16px !important;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 10px;
+  }
+  /* common css */
+  .header {
+    background-size: cover;
+    background-attachment: local;
+    width: 100%;
+    height: 100%;
+  }
+  .header-content {
+    padding: 20px 10px;
+  }
+  .header-content h1 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100% !important;
+  }
+  .header-content h2 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100% !important;
+  }
+
+  .header-content p {
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+  }
+  .header-content button {
+    font-size: 16px;
+  }
+  /* second section */
+  .second-section {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .second-section-card {
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: justify;
+  }
+
+  .second-section-card-img-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .second-section-card-container {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .second-section-card-second {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: justify;
+  }
+  .second-section-card-container {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .second-section-card-container h3 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .second-section-card-container p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  /* second section */
+  /* bake face  */
+  .back-face-third-section {
+    padding: 20px 10px;
+    margin: 0px;
+  }
+  .section {
+    padding: 0px;
+  }
+  .section h1{
+    padding: 0px;
+    width: 80%;
+    margin: 0px auto;
+  }
+  .section p{
+    padding: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 0px auto;
+    color: #ffffffcc;
+  }
+  .addressing-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0px;
+  }
+  /* bake face  */
+  footer{
+    height: 100%;
+    padding: 20px 10px;
+  }
+  /* footer */
+  footer::before{
+    display: none;
+  }
+  footer::after{
+    display: none;
+  }
+  .footer{
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    height: 100%;
+  }
+  /* footer */
+}
+@media screen and (min-width: 751px) and (max-width: 1050px) {
+  /* common css */
+  .section-title {
+    font-size: 32px;
+    margin: 0px auto;
+    padding: 20px 10px;
+    width: 85%;
+
+  }
+  .section-discription {
+    font-size: 16px !important;
+    width: 85%;
+    margin: 0px auto;
+    padding: 0px 10px;
+  }
+  /* common css */
+  .header {
+    background-size: cover;
+    background-attachment: local;
+    width: 100%;
+    height: 100%;
+  }
+  .header-content {
+    padding: 20px 10px;
+    gap: 10px;
+  }
+  .header-content h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 90% !important;
+    margin: 0px auto;
+  }
+  .header-content h2 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 90% !important;
+    margin: 0px auto;
+  }
+
+  .header-content p {
+    font-size: 18px;
+    font-weight: 600;
+    width: 90% !important;
+    margin: 0px auto;
+  }
+  .header-content button {
+    font-size: 16px;
+  }
+  /* second section */
+  .second-section {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .second-section-card {
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: justify;
+  }
+
+  .second-section-card-img-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .second-section-card-container {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .second-section-card-second {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: justify;
+  }
+  .second-section-card-container {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .second-section-card-container h3 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .second-section-card-container p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  /* second section */
+  /* bake face  */
+  .back-face-third-section {
+    padding: 20px 10px;
+    margin: 0px;
+  }
+  .section {
+    padding: 0px;
+  }
+  .section h1{
+    padding: 0px;
+    width: 80%;
+    margin: 0px auto;
+  }
+  .section p{
+    padding: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 0px auto;
+    color: #ffffffcc;
+  }
+  .addressing-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 0px;
+  }
+  /* bake face  */
+  footer{
+    height: 100%;
+    padding: 20px 10px;
+  }
+  /* footer */
+  footer::before{
+    display: none;
+  }
+  footer::after{
+    display: none;
+  }
+  .footer{
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    height: 100%;
+  }
+  /* footer */
+}
