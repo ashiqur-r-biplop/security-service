@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gruppo&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter";
+  font-family: "Exo 2", sans-serif;
   letter-spacing: 0px !important;
 }
 /* common css start */
@@ -22,6 +21,8 @@
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+  font-family: "Mulish", sans-serif !important;
+
 }
 /* 00A5F9 */
 .section-discription {
@@ -65,6 +66,8 @@
   position: relative;
   letter-spacing: 4px;
   width: 60% !important;
+  font-family: "Mulish", sans-serif !important;
+
 }
 
 .header-content h2 {
@@ -73,6 +76,8 @@
   font-weight: 900;
   letter-spacing: 4px;
   width: 60% !important;
+  font-family: "Mulish", sans-serif !important;
+
 }
 
 .header-content p {
@@ -86,7 +91,6 @@
   color: black;
   padding: 10px 30px;
   border: 1px solid #ffffff00;
-  font-weight: 600;
   border-radius: 5px;
   font-size: 24px;
   transition: all 0.3s ease-in-out;
@@ -192,7 +196,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-family: "Inter";
+  font-family: "Mulish", sans-serif !important;
   -webkit-text-fill-color: transparent;
 }
 
@@ -243,6 +247,8 @@
 
 .third-section-card-two h2 {
   font-weight: 700;
+  font-family: "Mulish", sans-serif !important;
+
 }
 
 .third-section-card-two p {
@@ -342,6 +348,8 @@
 .third-section-content h2 {
   font-size: 20px;
   font-weight: 700;
+  font-family: "Mulish", sans-serif !important;
+
 }
 /* third section  */
 /* footer */
@@ -370,6 +378,8 @@ footer {
   font-size: 42px;
   width: 70%;
   font-weight: 700;
+  font-family: "Mulish", sans-serif !important;
+
 }
 .footer p {
   font-size: 22px;
