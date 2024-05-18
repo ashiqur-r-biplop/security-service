@@ -18,9 +18,7 @@ body{
 .section-title {
   font-size: 52px;
   letter-spacing: 1px;
-  
   text-align: center;
-  
   background-color: transparent;
   background-image: linear-gradient(155deg, #00a5f9 30%, #ff9900 100%);
   background-clip: text;
@@ -30,7 +28,6 @@ body{
 }
 
 .section-discription {
-  
   text-align: center;
   width: 90%;
   margin: 0px auto;
@@ -47,41 +44,20 @@ body{
 .section-box-container h1 {
   letter-spacing: 2px;
   font-size: 52px;
-  
 }
 
 .section-box-container p {
   margin: 0px;
-
   font-size: 24px;
-  
-}
-.third-section-box-container {
-  text-align: center;
-}
-.third-section-box-container h1 {
-  letter-spacing: 2px;
-  font-size: 52px;
-  
-  color: #fff;
-}
-.third-section-box-container h3 {
-  letter-spacing: 2px;
-  font-size: 30px;
-  
-  color: #fff;
 }
 /* common css end */
 
 /* common css end */
 .marquee-button {
-  color: #000;
   font-size: 20px;
-  
   
   /* Use the correct font family name here */
 
-  background: transparent;
   position: relative;
   max-width: 100% !important;
   margin: auto;
@@ -102,7 +78,7 @@ body{
 
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 45s linear infinite;
+  animation: marquee 120s linear infinite;
 }
 
 .marquee-track-button-content {
@@ -136,23 +112,19 @@ body{
   position: relative;
   z-index: 20;
 }
-.service-hero::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background-color: #fff !important;
-}
 .hero-marquee {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #5a1f1f00;
   z-index: 10000; /* Ensure it's above other elements */
-  color: #000 !important; /* Add text color for visibility */
+  color: #ffffff !important; /* Add text color for visibility */
   padding: 10px 0; /* Add padding for better visibility */
   text-align: center; /* Center the text */
+  backdrop-filter: blur(10px); /* Adjust blur value as needed */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background: rgba(0, 0, 0, 0.356);
+  
 }
 
 .container {
@@ -190,7 +162,7 @@ body{
   border: none;
   color: black;
   padding: 10px 30px;
-  border: 1px solid ff9900(0, 142, 218, 0);
+  border: 1px solid #00000000;
   
   border-radius: 5px;
   font-size: 24px;
@@ -208,6 +180,8 @@ body{
 /* second section service page */
 .second-section-ng{
   background-color: #fff;
+  margin-top: -100px;
+  padding-top: 100px;
 }
 .section-title-box {
   display: flex;
@@ -372,17 +346,37 @@ body{
   padding-top: 100px;
 }
 
+.third-section-box-container {
+  text-align: center;
+}
+.third-section-box-container h1 {
+  letter-spacing: 2px;
+  font-size: 52px;
+  color: #fff;
+}
+.third-section-box-container h3 {
+  letter-spacing: 2px;
+  font-size: 30px;
+  
+  color: #fff;
+}
 .third-section-service-page-card-image-box {
   width: 100%;
   height: 100px;
   margin: 0px !important;
+  position: relative;
 }
 
 .third-section-service-page-card-image-box img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 70px;
   object-fit: contain;
   filter: brightness(0) invert(1) hue-rotate(90deg);
+  transition: top .5s ease-in-out;
+
 }
 
 .third-section-service-page-card {
@@ -401,12 +395,18 @@ body{
   text-align: center;
   transition: all 0.4s ease-in-out;
   height: 600px;
+  overflow: hidden;
+  
 }
 .third-section-service-page-card-inner {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  position: relative;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+
 }
 .third-section-service-page-card:hover {
   transform: scale(1.1);
@@ -415,12 +415,26 @@ body{
   -moz-box-shadow: 0px -20px 41px -5px rgba(144, 143, 233, 0.56) inset;
   transition: all 0.4s ease-in-out;
 }
-
+.third-section-service-page-card:hover .third-section-service-page-card-image-box img {
+  top: -130px;
+  transition: top .5s ease-in-out;
+}
 .third-section-service-page-card p {
   font-size: 19px;
   
 }
+.third-section-service-page-card .card-content {
+  position: static;
+  top: 0px;
+  transition: all 0.5s ease-in-out;
 
+}
+.third-section-service-page-card:hover .card-content{
+  margin-top: -100px;
+  transition: all 0.5s ease-in-out;
+
+
+}
 .third-section-service-page-card button {
   background-color: transparent;
   color: #3b3535;
