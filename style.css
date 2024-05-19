@@ -387,7 +387,7 @@ footer {
 }
 .footer-icons {
   display: flex;
-  align-items: center;
+  align-items: center; 
   font-size: 32px;
   gap: 20px;
 }
